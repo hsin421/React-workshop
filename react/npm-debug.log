@@ -1,0 +1,23 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'link' ]
+2 info using npm@2.1.5
+3 info using node@v0.10.32
+4 verbose linkPkg /Users/Shin/Desktop/Code/reactTraining/react-training-advanced/react
+5 verbose gentlyRm vacuuming /usr/local/lib/node_modules/react
+6 verbose gentlyRm vacuuming /usr/local/lib/node_modules/react
+7 verbose stack Error: EACCES, symlink '/Users/Shin/Desktop/Code/reactTraining/react-training-advanced/react'
+8 verbose cwd /Users/Shin/Desktop/Code/reactTraining/react-training-advanced/react
+9 error Darwin 14.3.0
+10 error argv "node" "/usr/local/bin/npm" "link"
+11 error node v0.10.32
+12 error npm  v2.1.5
+13 error path /Users/Shin/Desktop/Code/reactTraining/react-training-advanced/react
+14 error code EACCES
+15 error errno 3
+16 error Error: EACCES, symlink '/Users/Shin/Desktop/Code/reactTraining/react-training-advanced/react'
+16 error  { [Error: EACCES, symlink '/Users/Shin/Desktop/Code/reactTraining/react-training-advanced/react']
+16 error   errno: 3,
+16 error   code: 'EACCES',
+16 error   path: '/Users/Shin/Desktop/Code/reactTraining/react-training-advanced/react' }
+17 error Please try running this command again as root/Administrator.
+18 verbose exit [ 3, true ]
