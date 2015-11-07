@@ -11,7 +11,7 @@ import 'bootstrap-webpack'
 import React from 'react'
 import { render, findDOMNode } from 'react-dom'
 
-var Modal = React.createClass({
+class Modal extends React.Component {
   render () {
     return (
       <div className="modal fade">
@@ -28,17 +28,22 @@ var Modal = React.createClass({
       </div>
     )
   }
-})
+}
 
-var App = React.createClass({
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+  }
 
   openModal () {
     $(findDOMNode(this.refs.modal)).modal('show')
-  },
+  }
 
   closeModal () {
     $(findDOMNode(this.refs.modal)).modal('hide')
-  },
+  }
 
   render () {
     return (
@@ -64,6 +69,6 @@ var App = React.createClass({
       </div>
     );
   }
-});
+}
 
 render(<App/>, document.getElementById('app'))

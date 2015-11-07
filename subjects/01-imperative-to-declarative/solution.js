@@ -11,14 +11,19 @@ import 'bootstrap-webpack'
 import React from 'react'
 import { render, findDOMNode } from 'react-dom'
 
-var Modal = React.createClass({
+class Modal extends React.Component {
+  constructor(props) {
+    super(props)
+    this.doImperativeWork = this.doImperativeWork.bind(this);
+  }
+
   componentDidMount () {
     this.doImperativeWork()
-  },
+  }
 
   componentDidUpdate () {
     this.doImperativeWork()
-  },
+  }
 
   doImperativeWork () {
     var $el = $(findDOMNode(this))
@@ -26,7 +31,7 @@ var Modal = React.createClass({
       $el.modal('show')
     else
       $el.modal('hide')
-  },
+  }
 
   render () {
     return (
@@ -44,23 +49,23 @@ var Modal = React.createClass({
       </div>
     )
   }
-})
+}
 
-var App = React.createClass({
-
-  getInitialState () {
-    return {
-      modalIsOpen: false
-    }
-  },
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+    this.state = {modalIsOpen: false};
+  }
 
   openModal () {
     this.setState({ modalIsOpen: true })
-  },
+  }
 
   closeModal () {
     this.setState({ modalIsOpen: false })
-  },
+  }
 
   render () {
     return (
@@ -86,7 +91,7 @@ var App = React.createClass({
       </div>
     );
   }
-});
+};
 
 render(<App/>, document.getElementById('app'))
 
