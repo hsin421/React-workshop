@@ -1,5 +1,5 @@
-import altActions from './action';
-import alt from 'altInstance';
+import AltActions from './actions.js';
+import alt from './altInstance.js';
 
 /**
  * Flux Explanation of Store:
@@ -32,31 +32,23 @@ class AltStore {
   constructor() {
     // Instance variables defined anywhere in the store will become the state. You can initialize these in the constructor and
     // then update them directly in the prototype methods
-    this.topics = Immutable.OrderedMap({});
-    // Do not think we need an Immutable object here
-    this.newTopic = '';
+  
 
     // bindListeners accepts an object where the keys correspond to the method in your
     // StoreModel and the values can either be an array of action symbols or a single action symbol.
     // Remember: alt generates uppercase constants for us to reference
     this.bindListeners({
-      handleIncrement: TopicActions.INCREMENT,
-      handleDecrement: TopicActions.DECREMENT
+      handleIncrement: AltActions.INCREMENT,
+      handleDecrement: AltActions.DECREMENT
     });
   }
 
-  handleIncrement(id) {
-    const topic = this.topics.get(id);
-    const count = topic.get('count');
-    this.topics = this.topics.set(id, topic.set('count', count + 1));
-    this.emitChange();
+  handleIncrement(index) {
+   
   }
 
-  handleDecrement(id) {
-    const topic = this.topics.get(id);
-    const count = topic.get('count');
-    this.topics = this.topics.set(id, topic.set('count', count - 1));
-    this.emitChange();
+  handleDecrement(index) {
+ 
   }
 
 
@@ -64,3 +56,67 @@ class AltStore {
 
 // Export our newly created Store
 export default alt.createStore(AltStore, 'AltStore');
+
+
+
+
+
+// ***** solution, no peeking ****
+
+// class AltStore {
+
+//   /*
+//    * The constructor of your store definition receives the alt instance as its first and only argument. All instance variables,
+//    * values assigned to `this`, in any part of the StoreModel will become part of state.
+//    */
+//   constructor() {
+//     // Instance variables defined anywhere in the store will become the state. You can initialize these in the constructor and
+//     // then update them directly in the prototype methods
+//     this.counters = [
+//       {
+//         number: 0,
+//         id: 0
+//       },
+//        {
+//         number: 0,
+//         id: 1
+//       },
+//        {
+//         number: 0,
+//         id: 2
+//       },
+//        {
+//         number: 0,
+//         id: 3
+//       },
+//        {
+//         number: 0,
+//         id: 4
+//       }
+//     ];
+
+//     // bindListeners accepts an object where the keys correspond to the method in your
+//     // StoreModel and the values can either be an array of action symbols or a single action symbol.
+//     // Remember: alt generates uppercase constants for us to reference
+//     this.bindListeners({
+//       handleIncrement: AltActions.INCREMENT,
+//       handleDecrement: AltActions.DECREMENT
+//     });
+//   }
+
+//   handleIncrement(index) {
+//     let newCounters = this.counters;
+//     newCounters[index].number ++;
+//     this.counters = newCounters;
+//     this.emitChange();
+//   }
+
+//   handleDecrement(index) {
+//     let newCounters = this.counters;
+//     newCounters[index].number --;
+//     this.counters = newCounters;
+//     this.emitChange();
+//   }
+
+
+// }
