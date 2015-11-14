@@ -52,17 +52,20 @@ class App extends React.Component {
   }
 }
 
-function mapStateToProps(state) {
-  return {
-    counter: state.counter
-  }
-}
-
-let ReduxApp = connect(mapStateToProps)(App);
-
 render(
   <Provider store={store}> 
-   <ReduxApp /> 
+   <App counter={10} /> 
   </Provider>, document.getElementById('app'));
 // require('./createDevToolWindow.js')(store);
+
+
+// ***** cheatsheet
+
+// function mapStateToProps(state) {
+//   return {
+//     counter: state.counter
+//   }
+// }
+
+// let ReduxApp = connect(mapStateToProps)(App);
 

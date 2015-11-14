@@ -38,8 +38,7 @@ class AltStore {
     // StoreModel and the values can either be an array of action symbols or a single action symbol.
     // Remember: alt generates uppercase constants for us to reference
     this.bindListeners({
-      handleIncrement: AltActions.INCREMENT,
-      handleDecrement: AltActions.DECREMENT
+    
     });
   }
 
