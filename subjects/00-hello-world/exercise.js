@@ -10,6 +10,7 @@ import { render } from 'react-dom'
 // }
 
 const App = function() {
+					//create element    type	   props                    children   
 	return React.createElement('h1', {className: 'my-heading'}, 'hello world');
 }
 
