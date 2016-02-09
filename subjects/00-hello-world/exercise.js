@@ -1,37 +1,37 @@
 import React from 'react'
 import { render } from 'react-dom'
 
-class ControlledInput extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = { inputValue: '', headingColor: '' };
-		// this.handleInput = this.handleInput.bind(this);
-	}
+// class ControlledInput extends React.Component {
+// 	constructor(props) {
+// 		super(props);
+// 		this.state = { inputValue: '', headingColor: '' };
+// 		// this.handleInput = this.handleInput.bind(this);
+// 	}
 
-	handleInput = (e) => {
-		this.setState({inputValue: e.target.value});
-	}
+// 	handleInput = (e) => {
+// 		this.setState({inputValue: e.target.value});
+// 	}
 
-	handleClick = () => {
-		this.setState({headingColor: this.state.inputValue});
-	}
+// 	handleClick = () => {
+// 		this.setState({headingColor: this.state.inputValue});
+// 	}
 
-	handleHover = () => {
-		this.setState({headingColor: 'green'});
-	}
+// 	handleHover = () => {
+// 		this.setState({headingColor: 'green'});
+// 	}
 
-  render() {
-    return (
-    	<div>
-	    	<h1 style={{color: this.state.headingColor}}> {'Hello ' + (this.props.title || 'world')} </h1>
-	    	<pre> {JSON.stringify(this.state)} </pre>
-	    	<input style={{borderColor: 'black'}} onChange={this.handleInput} value={this.state.inputValue} />
-    		<button onClick={this.handleClick} onMouseEnter={this.handleHover}> Click me </button>
-    	</div>
-    	);
-  }
+//   render() {
+//     return (
+//     	<div>
+// 	    	<h1 style={{color: this.state.headingColor}}> {'Hello ' + (this.props.title || 'world')} </h1>
+// 	    	<pre> {JSON.stringify(this.state)} </pre>
+// 	    	<input style={{borderColor: 'black'}} onChange={this.handleInput} value={this.state.inputValue} />
+//     		<button onClick={this.handleClick} onMouseEnter={this.handleHover}> Click me </button>
+//     	</div>
+//     	);
+//   }
 
-}
+// }
 
 // class App extends React.Component {
 // 	constructor(props) {
@@ -87,25 +87,25 @@ class ControlledInput extends React.Component {
 
 // }
 
-class Dropdown extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = { display: false }
-	}
+// class Dropdown extends React.Component {
+// 	constructor(props) {
+// 		super(props);
+// 		this.state = { display: false }
+// 	}
 
-	handleDropdown = () => {
-		this.setState({display: !this.state.display});
-	}
+// 	handleDropdown = () => {
+// 		this.setState({display: !this.state.display});
+// 	}
 
-	render() {
-		return (
-			<div>
-				<p onClick={this.handleDropdown}> Dropdown </p>
-				{this.state.display && this.props.children}
-			</div>
-			)
-	}
-}
+// 	render() {
+// 		return (
+// 			<div>
+// 				<p onClick={this.handleDropdown}> Dropdown </p>
+// 				{this.state.display && this.props.children}
+// 			</div>
+// 			)
+// 	}
+// }
 
 // class App extends React.Component{
 // 	constructor(props) {
@@ -140,12 +140,15 @@ class App extends React.Component {
 	}
 
 	handleClick = (i) => {
-		this.setState({selected: i})
+		this.setState({selected: i});
+		// change the route
 	}
 
 	render() {
 		let tabs = this.state.data.map((e, i) => (
-			<span onClick={() => this.handleClick(i)} style={this.state.selected === i ? {borderBottom: '1px solid black'} : null}> {e.name} </span>
+			<span 
+				onClick={() => this.handleClick(i)} 
+				style={this.state.selected === i ? {borderBottom: '1px solid black'} : null}> {e.name} </span>
 			));
 		return (
 			<div>
