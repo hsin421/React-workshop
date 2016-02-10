@@ -15,8 +15,8 @@
 //   changeTone (event) {
 //     // let { clientX, clientY } = event
 //     // let { top, right, bottom, left } = event.target.getBoundingClientRect()
-//     // let pitch = (clientX - left) / right
-//     // let volume = 1 - (clientY - top) / bottom
+//     // let pitch = (clientX - left) / 200
+//     // let volume = 1 - (clientY - top) / 200
 //     // this.theremin.setPitchBend(pitch)
 //     // this.theremin.setVolume(volume)
 //   },
@@ -71,8 +71,8 @@
   //changeTone (event) {
     //let { clientX, clientY } = event
     //let { top, right, bottom, left } = event.target.getBoundingClientRect()
-    //let pitch = (clientX - left) / right
-    //let volume = 1 - (clientY - top) / bottom
+    //let pitch = (clientX - left) / 200
+    //let volume = 1 - (clientY - top) / 200
     //this.setState({ pitch, volume })
   //},
 
@@ -163,8 +163,8 @@
   //changeTone (event) {
     //let { clientX, clientY } = event
     //let { top, right, bottom, left } = event.target.getBoundingClientRect()
-    //let pitch = (clientX - left) / right
-    //let volume = 1 - (clientY - top) / bottom
+    //let pitch = (clientX - left) / 200
+    //let volume = 1 - (clientY - top) / 200
     //this.setState({ pitch, volume })
   //},
 
@@ -258,8 +258,8 @@
 //   changeTone (event) {
 //     let { clientX, clientY } = event
 //     let { top, right, bottom, left } = event.target.getBoundingClientRect()
-//     let pitch = (clientX - left) / right
-//     let volume = 1 - (clientY - top) / bottom
+//     let pitch = (clientX - left) / 200
+//     let volume = 1 - (clientY - top) / 200
 //     this.setState({ pitch, volume })
 //   },
 
