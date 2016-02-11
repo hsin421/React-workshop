@@ -14,7 +14,7 @@ styles.theremin = {
   display: 'inline-block'
 }
 
-class Tone extends React.Component {
+class Tone extends React.Component{
   constructor(props) {
     super(props);
     this.theremin = createTheremin();
@@ -24,7 +24,7 @@ class Tone extends React.Component {
     this.doImperativeWork();
   }
 
-  doImperativeWork() {
+  doImperativeWork = () => {
     if (this.props.isPlaying) {
       this.theremin.play();
     } else {
@@ -36,7 +36,7 @@ class Tone extends React.Component {
     this.theremin.setType(this.props.type);
   }
 
-  render() {
+  render(){
     return null;
   }
 }
@@ -46,11 +46,12 @@ class Theremin extends React.Component {
     super(props);
     this.state = {
       isPlaying: false,
-      pitch: 0,
       volume: 0,
+      pitch: 0,
       type: this.props.type || 'sine'
-    };
+    }
   }
+
 
   play = () => {
     this.setState({ isPlaying: true });
@@ -63,39 +64,42 @@ class Theremin extends React.Component {
   changeTone = (event) => {
     let { clientX, clientY } = event;
     let { top, right, bottom, left } = event.target.getBoundingClientRect();
-    let pitch = (clientX - left ) / 200;
-    let volume = 1 - (clientY - top) / 200;
+    let pitch = (clientX - left) / 200;
+    let volume = 1 - clientY - top / 200;
     this.setState({ pitch, volume });
   }
 
   render() {
+    let { isPlaying, volume, pitch, type } = this.state;
     return (
-        <div 
-          style={styles.theremin}
-          onMouseEnter={this.play}
-          onMouseLeave={this.stop}
-          onMouseMove={this.changeTone}
-         >
-          <Tone 
-            pitch={this.state.pitch}
-            volume={this.state.volume}
-            type={this.state.type}
-            isPlaying={this.state.isPlaying} />
-         </div>
-      );
+    <div>
+      <div 
+        style={styles.theremin}
+        onMouseEnter={this.play}
+        onMouseLeave={this.stop}
+        onMouseMove={this.changeTone} >
+        <Tone 
+          isPlaying={isPlaying}
+          pitch={pitch}
+          volume={volume}
+          type={type}
+        />
+      </div>
+    </div>)
   }
 }
 
-class App extends React.Component {
+class App extends React.Component{
   render() {
-    return (
-    <div>
-      <h1> What does it mean to be declarative? </h1>
-      <Theremin />
-      <Theremin type='triangle' />
-      <Theremin type='square' />
-      <Theremin type='sawtooth' />
-    </div>)
+    return(
+      <div>
+        <h1> What does it mean to be declarative? </h1>
+        <Theremin type="sine" />
+        <Theremin type="square" />
+        <Theremin type="sawtooth" />
+        <Theremin type="triangle" />
+      </div>
+      )
   }
 }
 

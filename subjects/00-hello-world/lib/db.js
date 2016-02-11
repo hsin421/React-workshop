@@ -1,5 +1,5 @@
 
 export function fetchTodo(cb) {
-	setTimeout(() => cb(['Buy coffee bean', 'Drink Redbull', 'Call mom']),
+	setTimeout(() => cb([{content: 'Buy coffee bean'}, {content: 'Drink Redbull'}, {content: 'Call mom'}]),
 		2000);
 }
