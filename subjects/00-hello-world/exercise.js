@@ -102,19 +102,19 @@ class TodoItem extends React.Component{
 	render(){
 		let { index, todo } = this.props;
 		return(
-			<span>
-				<p 
+			<div>
+				<span 
 					key={index} 
 					onClick={() => this.props.handleStrikeThru(index)} 
 					style={todo.struckThru ? {textDecoration: 'line-through'} : null}> 
 					{index + 1 + '. ' + todo.content} 
-					</p>
-					<button 
+					</span>
+					<span 
 						style={{float: 'right'}}
 						onClick={() => this.props.handleDelete(index)} > 
 						x 
-					</button> 
-			</span>
+					</span> 
+			</div>
 			)
 	}
 }
@@ -127,7 +127,7 @@ class TodosBoard extends React.Component{
 		return (
 			<div>
 				<h2>{this.props.user + 's To Do App'} </h2>
-				<div style={{height: '200', width: '200', border: '2px solid blue'}}>
+				<div style={{height: '200', width: '200', border: '2px solid blue', overflow: 'scroll', position: 'relative'}}>
 					{this.props.isLoading ? 'Loading data...' : todos}
 				</div>
 			</div>
