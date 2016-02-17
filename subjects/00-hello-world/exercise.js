@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { fetchTodo } from './lib/db';
+import Waypoint from 'react-waypoint';
+import { fetchTodo, fetchInitialTodos, loadMore } from './lib/db';
 
 // class App extends React.Component{
 // 	constructor(props) {
@@ -102,24 +103,25 @@ class TodoItem extends React.Component{
 	render(){
 		let { index, todo } = this.props;
 		return(
-			<span>
-				<p 
+			<div>
+				<span 
 					key={index} 
 					onClick={() => this.props.handleStrikeThru(index)} 
 					style={todo.struckThru ? {textDecoration: 'line-through'} : null}> 
 					{index + 1 + '. ' + todo.content} 
-					</p>
-					<button 
+					</span>
+					<span 
 						style={{float: 'right'}}
 						onClick={() => this.props.handleDelete(index)} > 
 						x 
-					</button> 
-			</span>
+					</span> 
+			</div>
 			)
 	}
 }
 
 class TodosBoard extends React.Component{
+
 	render(){
 		let todos = this.props.todos.map((todo, i) => (
 			<TodoItem key={i} index={i} todo={todo} handleStrikeThru={this.props.handleStrikeThru} handleDelete={this.props.handleDelete} />
@@ -127,8 +129,12 @@ class TodosBoard extends React.Component{
 		return (
 			<div>
 				<h2>{this.props.user + 's To Do App'} </h2>
-				<div style={{height: '200', width: '200', border: '2px solid blue'}}>
+				<div style={{height: '200', width: '200', border: '2px solid blue', overflow: 'scroll', position: 'relative'}}>
 					{this.props.isLoading ? 'Loading data...' : todos}
+					<div>
+						{this.props.isLoading || <p> Loading more todos... </p>}
+						<Waypoint onEnter={this.props.handleLoadMore} />
+					</div>
 				</div>
 			</div>
 			)
@@ -146,7 +152,7 @@ class TodoApp extends React.Component{
 	}
 
 	componentDidMount() {
-		fetchTodo(todos => this.setState({todos: todos, isLoading: false}));
+		fetchInitialTodos(todos => this.setState({todos: todos, isLoading: false}));
 	}
 
 	onInput = (e) => {
@@ -187,6 +193,20 @@ class TodoApp extends React.Component{
 		});
 	}
 
+	handleLoadMore = (todos) => {
+		if (!this.state.isLoading) {
+			console.log('Enter!');
+			const lastIndex = this.state.todos.length;
+			console.log('last index ' + lastIndex);
+			loadMore(lastIndex, moreTodos => this.setState(
+				{
+					todos: this.state.todos.concat(moreTodos), 
+					isLoading: false
+				}
+			));
+		}
+	}
+
 	render() {
 		return(
 			<div>
@@ -195,7 +215,8 @@ class TodoApp extends React.Component{
 					todos={this.state.todos}
 					user={this.props.user}
 					handleStrikeThru={this.handleStrikeThru}
-					handleDelete={this.handleDelete} />
+					handleDelete={this.handleDelete}
+					handleLoadMore={this.handleLoadMore} />
 				<TodoInput
 					newTodo={this.state.newTodo}
 					handleInput={this.onInput}

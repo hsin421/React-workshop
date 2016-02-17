@@ -99,7 +99,7 @@
 // *********** Componentized To Do App
 ///////////////////////////////////////
 
-class TodoItem extends React.Component {
+// class TodoItem extends React.Component {
 // 	render() {
 // 		return (
 // 			<p> 
