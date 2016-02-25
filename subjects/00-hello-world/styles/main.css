@@ -1,0 +1,13 @@
+
+.color {
+	color: purple;
+}
+
+.myStyle {
+	composes: color;
+	composes: myFontSize from './fonts.css';
+}
+
+.myStyleOnHover {
+
+}

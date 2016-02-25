@@ -30,6 +30,9 @@ class AltStore {
    * values assigned to `this`, in any part of the StoreModel will become part of state.
    */
   constructor() {
+    this.counter = {
+      number: 0
+    }
     // Instance variables defined anywhere in the store will become the state. You can initialize these in the constructor and
     // then update them directly in the prototype methods
   
@@ -38,16 +41,23 @@ class AltStore {
     // StoreModel and the values can either be an array of action symbols or a single action symbol.
     // Remember: alt generates uppercase constants for us to reference
     this.bindListeners({
-    
+      handleIncrement: AltActions.INCREMENT,
+      handleDecrement: AltActions.DECREMENT
     });
   }
 
-  handleIncrement(index) {
-   
+  handleIncrement() {
+    this.counter = {
+      number: this.counter.number + 1
+    } 
+    this.emitChange();
   }
 
-  handleDecrement(index) {
- 
+  handleDecrement() {
+    this.counter = {
+      number: this.counter.number - 1
+    }
+    this.emitChange();
   }
 
 

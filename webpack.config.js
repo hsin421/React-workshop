@@ -44,7 +44,7 @@ module.exports = {
 
   module: {
     loaders: [
-      { test: /\.css$/, loader: 'style!css' },
+      { test: /\.css$/, loader: 'style!css?modules' },
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel' },
       { test: /\.woff(2)?$/,   loader: "url?limit=10000&mimetype=application/font-woff" },
       { test: /\.ttf$/, loader: "file" },

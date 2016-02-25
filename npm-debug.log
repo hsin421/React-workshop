@@ -1,0 +1,476 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'i',
+1 verbose cli   'react-waypoint',
+1 verbose cli   '--save' ]
+2 info using npm@2.14.4
+3 info using node@v4.1.1
+4 verbose install initial load of /Users/Shin/Desktop/react-class/React-workshop/package.json
+5 warn package.json react-training@1.0.0 license should be a valid SPDX license expression
+6 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/alt/package.json
+7 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/axios/package.json
+8 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/babel/package.json
+9 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/babel-core/package.json
+10 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/babel-loader/package.json
+11 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/bootstrap/package.json
+12 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/bootstrap-webpack/package.json
+13 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/css-loader/package.json
+14 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/events/package.json
+15 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/expose-loader/package.json
+16 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/file-loader/package.json
+17 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/firebase/package.json
+18 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/flux/package.json
+19 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/grunt-cli/package.json
+20 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/immstruct/package.json
+21 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/immutable/package.json
+22 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/invariant/package.json
+23 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/jquery/package.json
+24 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/jsonp/package.json
+25 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/md5/package.json
+26 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/mkdirp/package.json
+27 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/object-assign/package.json
+28 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/purecss/package.json
+29 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react/package.json
+30 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-addons-perf/package.json
+31 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-dom/package.json
+32 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-motion/package.json
+33 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-redux/package.json
+34 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-router/package.json
+35 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-tween-state/package.json
+36 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/redux/package.json
+37 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/redux-devtools/package.json
+38 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/sort-by/package.json
+39 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/style-loader/package.json
+40 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/url-loader/package.json
+41 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/webpack/package.json
+42 verbose installManyTop reading scoped package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/webpack-dev-server/package.json
+43 info package.json babel-core@5.8.23 No README data
+44 info package.json react-addons-perf@0.14.0-beta3 No repository field.
+45 info package.json sort-by@1.1.1 No README data
+46 info package.json bootstrap-webpack@0.0.3 No license field.
+47 info package.json events@1.0.2 events is also the name of a node core module.
+48 info package.json events@1.0.2 No license field.
+49 info package.json firebase@2.2.9 No license field.
+50 info package.json grunt-cli@0.1.13 No license field.
+51 info package.json expose-loader@0.6.0 No license field.
+52 info package.json jsonp@0.2.0 No license field.
+53 info package.json jquery@2.1.4 No license field.
+54 info package.json invariant@2.1.0 license should be a valid SPDX license expression
+55 info package.json purecss@0.6.0 license should be a valid SPDX license expression
+56 info package.json react-tween-state@0.0.5 license should be a valid SPDX license expression
+57 verbose readDependencies loading dependencies from /Users/Shin/Desktop/react-class/React-workshop/package.json
+58 silly cache add args [ 'react-waypoint', null ]
+59 verbose cache add spec react-waypoint
+60 silly cache add parsed spec Result {
+60 silly cache add   raw: 'react-waypoint',
+60 silly cache add   scope: null,
+60 silly cache add   name: 'react-waypoint',
+60 silly cache add   rawSpec: '',
+60 silly cache add   spec: '*',
+60 silly cache add   type: 'range' }
+61 silly addNamed react-waypoint@*
+62 verbose addNamed "*" is a valid semver range for react-waypoint
+63 silly addNameRange { name: 'react-waypoint', range: '*', hasData: false }
+64 silly mapToRegistry name react-waypoint
+65 silly mapToRegistry using default registry
+66 silly mapToRegistry registry https://registry.npmjs.org/
+67 silly mapToRegistry uri https://registry.npmjs.org/react-waypoint
+68 verbose addNameRange registry:https://registry.npmjs.org/react-waypoint not in flight; fetching
+69 verbose request uri https://registry.npmjs.org/react-waypoint
+70 verbose request no auth needed
+71 info attempt registry request try #1 at 7:14:16 PM
+72 verbose request id 3dbfb7c96154e18c
+73 verbose etag "2UUFU6LOYYQUWLW2EZV4B30V0"
+74 http request GET https://registry.npmjs.org/react-waypoint
+75 http 304 https://registry.npmjs.org/react-waypoint
+76 silly get cb [ 304,
+76 silly get   { date: 'Thu, 18 Feb 2016 00:14:16 GMT',
+76 silly get     via: '1.1 varnish',
+76 silly get     'cache-control': 'max-age=300',
+76 silly get     etag: '"2UUFU6LOYYQUWLW2EZV4B30V0"',
+76 silly get     age: '139',
+76 silly get     connection: 'keep-alive',
+76 silly get     'x-served-by': 'cache-iad2145-IAD',
+76 silly get     'x-cache': 'HIT',
+76 silly get     'x-cache-hits': '1',
+76 silly get     'x-timer': 'S1455754456.636354,VS0,VE0',
+76 silly get     vary: 'Accept' } ]
+77 verbose etag https://registry.npmjs.org/react-waypoint from cache
+78 verbose get saving react-waypoint to /Users/Shin/.npm/registry.npmjs.org/react-waypoint/.cache.json
+79 silly addNameRange number 2 { name: 'react-waypoint', range: '*', hasData: true }
+80 silly addNameRange versions [ 'react-waypoint',
+80 silly addNameRange   [ '0.1.0',
+80 silly addNameRange     '0.2.0',
+80 silly addNameRange     '0.3.0',
+80 silly addNameRange     '1.0.0',
+80 silly addNameRange     '1.0.1',
+80 silly addNameRange     '1.0.2',
+80 silly addNameRange     '1.0.3',
+80 silly addNameRange     '1.0.4',
+80 silly addNameRange     '1.0.5',
+80 silly addNameRange     '1.0.6',
+80 silly addNameRange     '1.1.0',
+80 silly addNameRange     '1.1.1',
+80 silly addNameRange     '1.1.2',
+80 silly addNameRange     '1.1.3',
+80 silly addNameRange     '1.2.0',
+80 silly addNameRange     '1.2.1',
+80 silly addNameRange     '1.2.2',
+80 silly addNameRange     '1.2.3',
+80 silly addNameRange     '1.3.0' ] ]
+81 silly addNamed react-waypoint@1.3.0
+82 verbose addNamed "1.3.0" is a plain semver version for react-waypoint
+83 silly cache afterAdd react-waypoint@1.3.0
+84 verbose afterAdd /Users/Shin/.npm/react-waypoint/1.3.0/package/package.json not in flight; writing
+85 verbose afterAdd /Users/Shin/.npm/react-waypoint/1.3.0/package/package.json written
+86 silly install resolved [ { name: 'react-waypoint',
+86 silly install resolved     version: '1.3.0',
+86 silly install resolved     description: 'A React component to execute a function whenever you scroll to an element.',
+86 silly install resolved     main: 'build/npm/waypoint.js',
+86 silly install resolved     repository:
+86 silly install resolved      { type: 'git',
+86 silly install resolved        url: 'git+https://github.com/brigade/react-waypoint.git' },
+86 silly install resolved     homepage: 'https://github.com/brigade/react-waypoint',
+86 silly install resolved     bugs: { url: 'https://github.com/brigade/react-waypoint/issues' },
+86 silly install resolved     scripts:
+86 silly install resolved      { 'build-npm': 'rm -rf build/npm && mkdir -p build/npm && babel src/waypoint.jsx --out-file build/npm/waypoint.js',
+86 silly install resolved        test: 'eslint . --ext .js,.jsx && ./node_modules/.bin/karma start',
+86 silly install resolved        prepublish: 'npm run build-npm' },
+86 silly install resolved     author: { name: 'Brigade Engineering' },
+86 silly install resolved     license: 'MIT',
+86 silly install resolved     peerDependencies: { react: '^0.14.0', 'react-dom': '^0.14.0' },
+86 silly install resolved     devDependencies:
+86 silly install resolved      { babel: '^6.0.0',
+86 silly install resolved        'babel-cli': '^6.0.0',
+86 silly install resolved        'babel-core': '^6.0.0',
+86 silly install resolved        'babel-loader': '^6.0.0',
+86 silly install resolved        'babel-plugin-add-module-exports': '^0.1.2',
+86 silly install resolved        'babel-plugin-transform-react-jsx': '^6.0.0',
+86 silly install resolved        'babel-preset-es2015': '^6.0.0',
+86 silly install resolved        eslint: '^1.3.1',
+86 silly install resolved        'eslint-config-brigade': '^1.6.0',
+86 silly install resolved        'eslint-plugin-react': '^3.3.1',
+86 silly install resolved        'jasmine-core': '^2.1.3',
+86 silly install resolved        karma: '^0.13.9',
+86 silly install resolved        'karma-chrome-launcher': '^0.2.0',
+86 silly install resolved        'karma-cli': '^0.1.0',
+86 silly install resolved        'karma-firefox-launcher': '^0.1.6',
+86 silly install resolved        'karma-jasmine': '^0.3.6',
+86 silly install resolved        'karma-webpack': '^1.7.0',
+86 silly install resolved        react: '^0.14.0',
+86 silly install resolved        'react-dom': '^0.14.0',
+86 silly install resolved        webpack: '^1.5.3' },
+86 silly install resolved     keywords: [ 'react', 'component', 'react-component', 'scroll', 'onscroll' ],
+86 silly install resolved     gitHead: '7e2dea0e328ac8a3d1f66225f5f7fdec9084ca40',
+86 silly install resolved     _id: 'react-waypoint@1.3.0',
+86 silly install resolved     _shasum: 'e1ae100720e4035f0752afb82275517105d00505',
+86 silly install resolved     _from: 'react-waypoint@*',
+86 silly install resolved     _npmVersion: '3.3.12',
+86 silly install resolved     _nodeVersion: '5.2.0',
+86 silly install resolved     _npmUser: { name: 'trotzig', email: 'henric.trotzig@gmail.com' },
+86 silly install resolved     dist:
+86 silly install resolved      { shasum: 'e1ae100720e4035f0752afb82275517105d00505',
+86 silly install resolved        tarball: 'http://registry.npmjs.org/react-waypoint/-/react-waypoint-1.3.0.tgz' },
+86 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+86 silly install resolved     _npmOperationalInternal:
+86 silly install resolved      { host: 'packages-9-west.internal.npmjs.com',
+86 silly install resolved        tmp: 'tmp/react-waypoint-1.3.0.tgz_1455621952629_0.8171204007230699' },
+86 silly install resolved     directories: {},
+86 silly install resolved     _resolved: 'https://registry.npmjs.org/react-waypoint/-/react-waypoint-1.3.0.tgz',
+86 silly install resolved     readme: 'ERROR: No README data found!' } ]
+87 info install react-waypoint@1.3.0 into /Users/Shin/Desktop/react-class/React-workshop
+88 info installOne react-waypoint@1.3.0
+89 verbose installOne of react-waypoint to /Users/Shin/Desktop/react-class/React-workshop not in flight; installing
+90 verbose lock using /Users/Shin/.npm/_locks/react-waypoint-14e47e7ce03fcc3d.lock for /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-waypoint
+91 silly install write writing react-waypoint 1.3.0 to /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-waypoint
+92 verbose unbuild node_modules/react-waypoint
+93 silly gentlyRm /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-waypoint is being purged from base /Users/Shin/Desktop/react-class/React-workshop
+94 verbose gentlyRm don't care about contents; nuking /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-waypoint
+95 verbose tar unpack /Users/Shin/.npm/react-waypoint/1.3.0/package.tgz
+96 verbose tar unpacking to /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-waypoint
+97 silly gentlyRm /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-waypoint is being purged
+98 verbose gentlyRm don't care about contents; nuking /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-waypoint
+99 silly gunzTarPerm modes [ '755', '644' ]
+100 silly gunzTarPerm extractEntry package.json
+101 silly gunzTarPerm extractEntry .npmignore
+102 silly gunzTarPerm extractEntry README.md
+103 silly gunzTarPerm extractEntry LICENSE
+104 silly gunzTarPerm extractEntry .travis.yml
+105 silly gunzTarPerm extractEntry CONTRIBUTING.md
+106 silly gunzTarPerm extractEntry build/npm/waypoint.js
+107 silly gunzTarPerm extractEntry CHANGELOG.md
+108 silly gunzTarPerm extractEntry .babelrc
+109 verbose write writing to /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-waypoint/package.json
+110 info preinstall react-waypoint@1.3.0
+111 verbose readDependencies loading dependencies from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-waypoint/package.json
+112 silly prepareForInstallMany adding react-dom@^0.14.0 from react-waypoint peerDependencies
+113 warn peerDependencies The peer dependency react-dom@^0.14.0 included from react-waypoint will no
+114 warn peerDependencies longer be automatically installed to fulfill the peerDependency
+115 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
+116 verbose readDependencies loading dependencies from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-waypoint/package.json
+117 silly install resolved []
+118 verbose about to build /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-waypoint
+119 info build /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-waypoint
+120 info linkStuff react-waypoint@1.3.0
+121 silly linkStuff react-waypoint@1.3.0 has /Users/Shin/Desktop/react-class/React-workshop/node_modules as its parent node_modules
+122 verbose linkBins react-waypoint@1.3.0
+123 verbose linkMans react-waypoint@1.3.0
+124 verbose rebuildBundles react-waypoint@1.3.0
+125 info install react-waypoint@1.3.0
+126 info postinstall react-waypoint@1.3.0
+127 verbose readDependencies loading dependencies from /Users/Shin/Desktop/react-class/React-workshop/package.json
+128 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/alt/package.json
+129 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/axios/package.json
+130 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/babel/package.json
+131 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/babel-core/package.json
+132 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/babel-loader/package.json
+133 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/bootstrap/package.json
+134 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/bootstrap-webpack/package.json
+135 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/css-loader/package.json
+136 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/events/package.json
+137 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/expose-loader/package.json
+138 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/file-loader/package.json
+139 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/firebase/package.json
+140 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/flux/package.json
+141 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/grunt-cli/package.json
+142 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/immstruct/package.json
+143 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/immutable/package.json
+144 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/invariant/package.json
+145 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/jquery/package.json
+146 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/jsonp/package.json
+147 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/md5/package.json
+148 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/mkdirp/package.json
+149 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/object-assign/package.json
+150 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/purecss/package.json
+151 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react/package.json
+152 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-addons-perf/package.json
+153 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-dom/package.json
+154 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-motion/package.json
+155 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-redux/package.json
+156 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-router/package.json
+157 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-tween-state/package.json
+158 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-waypoint/package.json
+159 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/redux/package.json
+160 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/redux-devtools/package.json
+161 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/sort-by/package.json
+162 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/style-loader/package.json
+163 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/url-loader/package.json
+164 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/webpack/package.json
+165 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/webpack-dev-server/package.json
+166 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/.bin/babel/package.json
+167 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/.bin/babel-external-helpers/package.json
+168 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/.bin/babel-node/package.json
+169 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/.bin/babel-plugin/package.json
+170 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/.bin/grunt/package.json
+171 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/.bin/mkdirp/package.json
+172 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/.bin/webpack/package.json
+173 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/.bin/webpack-dev-server/package.json
+174 silly cache add args [ 'react-dom@^0.14.0', null ]
+175 verbose cache add spec react-dom@^0.14.0
+176 silly cache add parsed spec Result {
+176 silly cache add   raw: 'react-dom@^0.14.0',
+176 silly cache add   scope: null,
+176 silly cache add   name: 'react-dom',
+176 silly cache add   rawSpec: '^0.14.0',
+176 silly cache add   spec: '>=0.14.0 <0.15.0',
+176 silly cache add   type: 'range' }
+177 silly addNamed react-dom@>=0.14.0 <0.15.0
+178 verbose addNamed ">=0.14.0 <0.15.0" is a valid semver range for react-dom
+179 silly addNameRange { name: 'react-dom', range: '>=0.14.0 <0.15.0', hasData: false }
+180 silly mapToRegistry name react-dom
+181 silly mapToRegistry using default registry
+182 silly mapToRegistry registry https://registry.npmjs.org/
+183 silly mapToRegistry uri https://registry.npmjs.org/react-dom
+184 verbose addNameRange registry:https://registry.npmjs.org/react-dom not in flight; fetching
+185 verbose request uri https://registry.npmjs.org/react-dom
+186 verbose request no auth needed
+187 info attempt registry request try #1 at 7:14:16 PM
+188 verbose etag "2PGBDG1D39QGOOVA1VMK4MCSW"
+189 http request GET https://registry.npmjs.org/react-dom
+190 http 304 https://registry.npmjs.org/react-dom
+191 silly get cb [ 304,
+191 silly get   { date: 'Thu, 18 Feb 2016 00:14:16 GMT',
+191 silly get     via: '1.1 varnish',
+191 silly get     'cache-control': 'max-age=300',
+191 silly get     etag: '"2PGBDG1D39QGOOVA1VMK4MCSW"',
+191 silly get     age: '273',
+191 silly get     connection: 'keep-alive',
+191 silly get     'x-served-by': 'cache-iad2140-IAD',
+191 silly get     'x-cache': 'HIT',
+191 silly get     'x-cache-hits': '3',
+191 silly get     'x-timer': 'S1455754456.978345,VS0,VE0',
+191 silly get     vary: 'Accept' } ]
+192 verbose etag https://registry.npmjs.org/react-dom from cache
+193 verbose get saving react-dom to /Users/Shin/.npm/registry.npmjs.org/react-dom/.cache.json
+194 silly addNameRange number 2 { name: 'react-dom', range: '>=0.14.0 <0.15.0', hasData: true }
+195 silly addNameRange versions [ 'react-dom',
+195 silly addNameRange   [ '0.1.0',
+195 silly addNameRange     '0.14.0-beta1',
+195 silly addNameRange     '0.14.0-beta2',
+195 silly addNameRange     '0.14.0-beta3',
+195 silly addNameRange     '0.14.0-rc1',
+195 silly addNameRange     '0.14.0',
+195 silly addNameRange     '0.14.1',
+195 silly addNameRange     '0.14.2',
+195 silly addNameRange     '0.14.3',
+195 silly addNameRange     '0.14.4',
+195 silly addNameRange     '0.14.5',
+195 silly addNameRange     '0.14.6',
+195 silly addNameRange     '0.15.0-alpha.1',
+195 silly addNameRange     '0.14.7' ] ]
+196 silly addNamed react-dom@0.14.7
+197 verbose addNamed "0.14.7" is a plain semver version for react-dom
+198 silly cache afterAdd react-dom@0.14.7
+199 verbose afterAdd /Users/Shin/.npm/react-dom/0.14.7/package/package.json not in flight; writing
+200 verbose afterAdd /Users/Shin/.npm/react-dom/0.14.7/package/package.json written
+201 silly install resolved [ { name: 'react-dom',
+201 silly install resolved     version: '0.14.7',
+201 silly install resolved     description: 'React package for working with the DOM.',
+201 silly install resolved     main: 'index.js',
+201 silly install resolved     repository:
+201 silly install resolved      { type: 'git',
+201 silly install resolved        url: 'git+https://github.com/facebook/react.git' },
+201 silly install resolved     keywords: [ 'react' ],
+201 silly install resolved     license: 'BSD-3-Clause',
+201 silly install resolved     bugs: { url: 'https://github.com/facebook/react/issues' },
+201 silly install resolved     homepage: 'https://facebook.github.io/react/',
+201 silly install resolved     dependencies: {},
+201 silly install resolved     peerDependencies: { react: '^0.14.7' },
+201 silly install resolved     scripts: { start: 'node server.js' },
+201 silly install resolved     _id: 'react-dom@0.14.7',
+201 silly install resolved     _shasum: '973c302110b3a680c9afe69d07c623b9c0952d82',
+201 silly install resolved     _resolved: 'https://registry.npmjs.org/react-dom/-/react-dom-0.14.7.tgz',
+201 silly install resolved     _from: 'react-dom@>=0.14.0 <0.15.0',
+201 silly install resolved     _npmVersion: '2.14.12',
+201 silly install resolved     _nodeVersion: '4.2.6',
+201 silly install resolved     _npmUser: { name: 'graue', email: 'scott@oceanbase.org' },
+201 silly install resolved     dist:
+201 silly install resolved      { shasum: '973c302110b3a680c9afe69d07c623b9c0952d82',
+201 silly install resolved        tarball: 'http://registry.npmjs.org/react-dom/-/react-dom-0.14.7.tgz' },
+201 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+201 silly install resolved     directories: {},
+201 silly install resolved     readme: 'ERROR: No README data found!' } ]
+202 info install react-dom@0.14.7 into /Users/Shin/Desktop/react-class/React-workshop
+203 info installOne react-dom@0.14.7
+204 verbose installOne of react-dom to /Users/Shin/Desktop/react-class/React-workshop not in flight; installing
+205 verbose lock using /Users/Shin/.npm/_locks/react-dom-147e42213c23328f.lock for /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-dom
+206 silly install write writing react-dom 0.14.7 to /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-dom
+207 verbose unbuild node_modules/react-dom
+208 info preuninstall react-dom@0.14.0-beta3
+209 info uninstall react-dom@0.14.0-beta3
+210 verbose unbuild rmStuff react-dom@0.14.0-beta3 from /Users/Shin/Desktop/react-class/React-workshop/node_modules
+211 info postuninstall react-dom@0.14.0-beta3
+212 silly gentlyRm /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-dom is being purged from base /Users/Shin/Desktop/react-class/React-workshop
+213 verbose gentlyRm don't care about contents; nuking /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-dom
+214 silly vacuum-fs purging /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-dom
+215 silly vacuum-fs quitting because other entries in /Users/Shin/Desktop/react-class/React-workshop/node_modules
+216 verbose tar unpack /Users/Shin/.npm/react-dom/0.14.7/package.tgz
+217 verbose tar unpacking to /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-dom
+218 silly gentlyRm /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-dom is being purged
+219 verbose gentlyRm don't care about contents; nuking /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-dom
+220 silly gunzTarPerm modes [ '755', '644' ]
+221 silly gunzTarPerm extractEntry package.json
+222 silly gunzTarPerm extractEntry README.md
+223 silly gunzTarPerm extractEntry LICENSE
+224 silly gunzTarPerm extractEntry index.js
+225 silly gunzTarPerm extractEntry server.js
+226 silly gunzTarPerm extractEntry PATENTS
+227 silly gunzTarPerm extractEntry dist/react-dom-server.js
+228 silly gunzTarPerm extractEntry dist/react-dom-server.min.js
+229 silly gunzTarPerm extractEntry dist/react-dom.js
+230 silly gunzTarPerm extractEntry dist/react-dom.min.js
+231 verbose write writing to /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-dom/package.json
+232 info preinstall react-dom@0.14.7
+233 verbose readDependencies loading dependencies from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-dom/package.json
+234 silly prepareForInstallMany adding react@^0.14.7 from react-dom peerDependencies
+235 warn peerDependencies The peer dependency react@^0.14.7 included from react-dom will no
+236 warn peerDependencies longer be automatically installed to fulfill the peerDependency
+237 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
+238 verbose readDependencies loading dependencies from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-dom/package.json
+239 silly install resolved []
+240 verbose about to build /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-dom
+241 info build /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-dom
+242 info linkStuff react-dom@0.14.7
+243 silly linkStuff react-dom@0.14.7 has /Users/Shin/Desktop/react-class/React-workshop/node_modules as its parent node_modules
+244 verbose linkBins react-dom@0.14.7
+245 verbose linkMans react-dom@0.14.7
+246 verbose rebuildBundles react-dom@0.14.7
+247 info install react-dom@0.14.7
+248 info postinstall react-dom@0.14.7
+249 verbose readDependencies loading dependencies from /Users/Shin/Desktop/react-class/React-workshop/package.json
+250 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/alt/package.json
+251 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/axios/package.json
+252 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/babel/package.json
+253 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/babel-core/package.json
+254 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/babel-loader/package.json
+255 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/bootstrap/package.json
+256 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/bootstrap-webpack/package.json
+257 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/css-loader/package.json
+258 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/events/package.json
+259 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/expose-loader/package.json
+260 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/file-loader/package.json
+261 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/firebase/package.json
+262 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/flux/package.json
+263 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/grunt-cli/package.json
+264 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/immstruct/package.json
+265 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/immutable/package.json
+266 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/invariant/package.json
+267 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/jquery/package.json
+268 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/jsonp/package.json
+269 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/md5/package.json
+270 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/mkdirp/package.json
+271 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/object-assign/package.json
+272 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/purecss/package.json
+273 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react/package.json
+274 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-addons-perf/package.json
+275 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-dom/package.json
+276 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-motion/package.json
+277 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-redux/package.json
+278 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-router/package.json
+279 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-tween-state/package.json
+280 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-waypoint/package.json
+281 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/redux/package.json
+282 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/redux-devtools/package.json
+283 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/sort-by/package.json
+284 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/style-loader/package.json
+285 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/url-loader/package.json
+286 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/webpack/package.json
+287 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/webpack-dev-server/package.json
+288 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/.bin/babel/package.json
+289 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/.bin/babel-external-helpers/package.json
+290 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/.bin/babel-node/package.json
+291 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/.bin/babel-plugin/package.json
+292 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/.bin/grunt/package.json
+293 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/.bin/mkdirp/package.json
+294 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/.bin/webpack/package.json
+295 verbose targetResolver reading package data from /Users/Shin/Desktop/react-class/React-workshop/node_modules/.bin/webpack-dev-server/package.json
+296 verbose already installed skipping react@^0.14.7 /Users/Shin/Desktop/react-class/React-workshop
+297 silly install resolved []
+298 verbose unlock done using /Users/Shin/.npm/_locks/react-dom-147e42213c23328f.lock for /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-dom
+299 verbose unlock done using /Users/Shin/.npm/_locks/react-waypoint-14e47e7ce03fcc3d.lock for /Users/Shin/Desktop/react-class/React-workshop/node_modules/react-waypoint
+300 verbose validateInstall loading /Users/Shin/Desktop/react-class/React-workshop/package.json for validation
+301 verbose stack Error: The package react@0.14.2 does not satisfy its siblings' peerDependencies requirements!
+301 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+301 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+301 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+301 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+301 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+301 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+301 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+301 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+301 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+301 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+302 verbose cwd /Users/Shin/Desktop/react-class/React-workshop
+303 error Darwin 15.3.0
+304 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "i" "react-waypoint" "--save"
+305 error node v4.1.1
+306 error npm  v2.14.4
+307 error code EPEERINVALID
+308 error peerinvalid The package react@0.14.2 does not satisfy its siblings' peerDependencies requirements!
+308 error peerinvalid Peer react-addons-perf@0.14.0-beta3 wants react@^0.14.0-beta3
+308 error peerinvalid Peer react-dom@0.14.7 wants react@^0.14.7
+308 error peerinvalid Peer react-motion@0.2.7 wants react@>=0.13.2 || ^0.14.0-beta1
+308 error peerinvalid Peer react-redux@4.0.0 wants react@^0.14.0
+308 error peerinvalid Peer react-waypoint@1.3.0 wants react@^0.14.0
+309 verbose exit [ 1, true ]

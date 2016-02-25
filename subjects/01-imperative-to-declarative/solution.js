@@ -25,7 +25,7 @@ class Modal extends React.Component {
     this.doImperativeWork()
   }
 
-  doImperativeWork () {
+  doImperativeWork() {
     var $el = $(findDOMNode(this))
     if (this.props.isOpen === true)
       $el.modal('show')

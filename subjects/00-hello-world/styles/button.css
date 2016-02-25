@@ -1,0 +1,13 @@
+.common { 
+	composes: myFont from './fonts.css';
+	composes: themeColor from './colors.css';
+	/* font-sizes, padding, border-radius */ 
+}
+.normal { 
+	composes: common; 
+	/* blue color, light blue background */ 
+}
+.error { 
+	composes: common; 
+	/* red color, light red background */ 
+}
