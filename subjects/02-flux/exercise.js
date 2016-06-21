@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
-// import AltStore from './store.js';
-// import AltAction from './actions.js';
+import AltStore from './store.js';
+import AltAction from './actions.js';
 
 const styles = {
   div: {fontSize: '30px', paddingLeft: '40px', marginTop: '50px'},
@@ -9,19 +9,46 @@ const styles = {
 };
 
 
-class Counter extends React.Component {
+class Todo extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { number: 0 }; 
+    this.state = AltStore.getState(); 
+  }
+
+  componentDidMount() {
+    AltStore.listen(this._onChange);
+  }
+
+  componentWillUnmount() {
+    AltStore.unlisten(this._onChange);
+  }
+
+  _onChange = () => {
+    this.setState({
+      todoState: AltStore.getState().todoState
+    });
+  }
+
+  handleInput = (e) => {
+    AltAction.input(e.target.value);
+  }
+
+  handleSubmit = () => {
+    AltAction.todosubmit(this.state.todoState.inputValue);
   }
 
   render() {
+    const todos = this.state.todoState.todos.map(
+      (todo, index) => <p key={index}> {todo} </p>
+    );
     return (
       <div style={styles.div}>
-        <h3> I am counter #{this.props.id} </h3>
-        <span  style={styles.span}> + </span> 
-        <span style={styles.span}> {this.state.number} </span> 
-        <span style={styles.span}> - </span>
+        <pre>{JSON.stringify(this.state)}</pre>
+        <input 
+          onChange={this.handleInput} 
+          value={this.state.todoState.inputValue} />
+        <button onClick={this.handleSubmit}>Submit</button>
+        {todos}
       </div>
     );
   }
@@ -37,7 +64,7 @@ class App extends React.Component {
     return (
       <div>
         <h1> What the flux? </h1>
-        <Counter id="1"/>
+        <Todo />
       </div>
       );
   }
@@ -158,27 +185,27 @@ Open Flux.png
 
 //   _onChange = () => {
 //     this.setState({
-//       counters: AltStore.getState().counters
+//       counter: AltStore.getState().counter
 //     });
 //   }
 
-//   increment = (index) => {
-//     AltAction.increment(index);
+//   increment = () => {
+//     AltAction.increment();
 //   }
 
-//   decrement = (index) => {
-//     AltAction.decrement(index);
+//   decrement = () => {
+//     AltAction.decrement();
 //   }
 
 //   render() {
-//     let counters = this.state.counters.map(counter => (
-//       <Counter key={counter.id} id={counter.id} number={counter.number} increment={() => this.increment(counter.id)} decrement={() => this.decrement(counter.id)} />
-//       ))
+//     const { counter } = this.state;
 //     return (
 //       <div>
 //         <h1> What the flux? </h1>
-//         {counters /*<Counter id="1" number={this.state.counter.number} increment={this.increment} decrement={this.decrement} />*/}
+//         <Counter number={counter} increment={this.increment} decrement={this.decrement} />
 //       </div>
 //       );
 //   }
 // }
+
+// render(<App/>, document.getElementById('app'));

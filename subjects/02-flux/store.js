@@ -32,22 +32,32 @@ class AltStore {
   constructor() {
     // Instance variables defined anywhere in the store will become the state. You can initialize these in the constructor and
     // then update them directly in the prototype methods
-  
+    this.todoState = {
+      inputValue: '',
+      todos: []
+    } 
 
     // bindListeners accepts an object where the keys correspond to the method in your
     // StoreModel and the values can either be an array of action symbols or a single action symbol.
     // Remember: alt generates uppercase constants for us to reference
     this.bindListeners({
-    
+      handleInput: AltActions.INPUT,
+      handleSubmit: AltActions.TODOSUBMIT
     });
   }
 
-  handleIncrement(index) {
-   
+  handleInput(input) {
+    this.todoState = {
+      inputValue: input,
+      todos: this.todoState.todos
+    }
   }
 
-  handleDecrement(index) {
- 
+  handleSubmit(todo) {
+    this.todoState = {
+      inputValue: '',
+      todos: [...this.todoState.todos, todo]
+    };
   }
 
 

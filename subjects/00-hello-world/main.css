@@ -1,0 +1,39 @@
+
+/* colora */
+
+.orange {
+}
+
+
+.todoItem {
+	list-style: none;
+	color: green;
+	composes: smallFont from './fonts.css';
+	margin-bottom: 10px;
+}
+
+.button {
+	width: 50px;
+	height: 30px;
+	border-radius: 10px;
+}
+
+.groupC {
+	background-color: orange;
+	font-size: 12px;
+}
+
+.allButton {
+	composes: button;
+	background-color: green;
+}
+
+.completeButton {
+	composes: button;
+	composes: groupC;
+}
+
+.todoItemComplete {
+	composes: todoItem;
+	text-decoration: line-through;
+}

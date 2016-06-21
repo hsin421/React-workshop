@@ -3,7 +3,15 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import configureStore from './store.js'
 import { connect } from 'react-redux'
-// import { incrementRedux, decrementRedux } from './actions.js'
+import { 
+  incrementRedux, 
+  decrementRedux, 
+  inputTyping, 
+  handleSubmit,
+  handleDelete,
+  requestTodosRedux } from './actions.js';
+
+import { requestTodos } from './fakeDb';
 
 const styles = {
   div: {fontSize: '30px', paddingLeft: '40px', marginTop: '50px'},
@@ -34,29 +42,76 @@ class App extends React.Component {
     super(props)
   }
 
-  increment = () => {
-
+  componentDidMount() {
+    requestTodos((todos) => {
+      this.props.dispatch(requestTodosRedux(todos))
+      // console.log(todos);
+    });
   }
 
-  decrement = () => {
+  increment = (index) => {
+    this.props.dispatch(incrementRedux(index));
+  }
 
+  decrement = (index) => {
+    this.props.dispatch(decrementRedux(index));
+  }
+
+  handleInput = (e) => {
+    this.props.dispatch(inputTyping(e.target.value));
+  }
+
+  handleSubmit = () => {
+    this.props.dispatch(handleSubmit(this.props.todos.inputValue))
+  }
+
+  handleDelete = (index) => {
+    this.props.dispatch(handleDelete(index));
   }
 
   render() {
+    const todos = this.props.todos.todos.map(
+      (todo, index) => 
+        <p key={todo}> 
+          {todo} 
+          <button onClick={() => this.handleDelete(index)}>x</button>
+        </p>
+    )
+    const counters = this.props.counters.map(
+      (counter, index) => 
+        <Counter 
+          key={index}
+          id={index} 
+          number={counter.count} 
+          increment={() => this.increment(index)} 
+          decrement={() => this.decrement(index)} />
+    );   
     return (
       <div>
         <h1> What the redux? </h1>
-        <Counter id="1" number={this.props.counter} increment={this.increment} decrement={this.decrement} />
+        <input onChange={this.handleInput} value={this.props.todos.inputValue} />
+        <button onClick={this.handleSubmit} > Submit </button>
+        { todos }
+        { counters }
       </div>
       );
   }
 }
+// state is Redux state / return props for our component
+const mapStateToProps = (state) => {
+  return {
+    counters: state.counters,
+    todos: state.todos
+  }
+}
+// functional programming: higher order components (functions)
+let ReduxApp = connect(mapStateToProps)(App);
 
 render(
   <Provider store={store}> 
-   <App counter={10} /> 
+   <ReduxApp counter={10} /> 
   </Provider>, document.getElementById('app'));
-// require('./createDevToolWindow.js')(store);
+require('./createDevToolWindow.js')(store);
 
 
 // ***** cheatsheet

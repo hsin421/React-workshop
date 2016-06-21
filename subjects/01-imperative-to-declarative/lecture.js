@@ -14,6 +14,73 @@ styles.theremin = {
   display: 'inline-block'
 }
 
+// class App extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       isPlaying: false,
+//       pitch: 0,
+//       volume: 0
+//     }
+//   }
+
+//   componentWillMount () {
+//     this.theremin = createTheremin()
+//   }
+//   // Imperative / declarative 
+//   play = () => {
+//     // this.theremin.play();
+//     this.setState({ isPlaying: true });
+//   }
+
+//   stop = () => {
+//     // this.theremin.stop();
+//     this.setState({ isPlaying: false });
+//   }
+
+//   doImperativeWork = () => {
+//     if (this.state.isPlaying) {
+//       this.theremin.play();
+//     } else {
+//       this.theremin.stop();
+//     }
+
+//     this.theremin.setPitchBend(this.state.pitch);
+//     this.theremin.setVolume(this.state.volume);
+//   }
+
+//   componentDidUpdate() {
+//     this.doImperativeWork();
+//   }
+
+//   changeTone = (event) => {
+//     let { clientX, clientY } = event;
+//     let { top, right, bottom, left } = event.target
+//     .getBoundingClientRect();
+//     let pitch =  (clientX - left ) / right;
+//     let volume = 1 - (clientY - top ) / bottom;
+//     // this.theremin.setPitchBend(pitch);
+//     // this.theremin.setVolume(volume);
+
+//     // this.setState({ pitch: pitch, volume: volume })
+//     this.setState({ pitch, volume });
+//   }
+
+//   render() {
+//     return (
+//       <div>
+//         <h1>What does it mean to be declarative?</h1>
+//         <div
+//           style={styles.theremin}
+//           onMouseEnter={this.play}
+//           onMouseLeave={this.stop}
+//           onMouseMove={this.changeTone}
+//         />
+//       </div>
+//     )
+//   }
+// }
+
 class Tone extends React.Component {
   constructor(props) {
     super(props);

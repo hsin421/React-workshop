@@ -30,43 +30,61 @@ class Modal extends React.Component {
   }
 }
 
-class App extends React.Component {
+class Dropdown extends React.Component {
   constructor(props) {
-    super(props)
-    this.openModal = this.openModal.bind(this);
-    this.closeModal = this.closeModal.bind(this);
+    super(props);
+    this.state = {
+      isShowing: false,
+      selectedData: null
+    }
   }
 
-  openModal () {
-    $(findDOMNode(this.refs.modal)).modal('show')
+  toggleDropdown = () => {
+    this.setState({
+      isShowing: !this.state.isShowing
+    })
   }
 
-  closeModal () {
-    $(findDOMNode(this.refs.modal)).modal('hide')
-  }
+  selectData = (data) => {
+    this.setState({
+      selectedData: data,
+      isShowing: false
+    });
+  } 
+  render() {
+    const dataArray = this.props.data.map(
+      data => <li onClick={() => this.selectData(data)}> {data} </li>
+    );
 
-  render () {
     return (
-      <div className="container">
-        <h1>Let’s make bootstrap modal declarative</h1>
-
-        <button
-          className="btn btn-primary"
-          onClick={this.openModal}
-        >open modal</button>
-
-        <Modal ref="modal" title="Declarative is better">
-          <p>Calling methods on instances is a Imperative not a Declarative!</p>
-          <p>It’s the dynamic process, not the static program in text space.</p>
-          <p>You have to experience it over time, rather than in snapshots of state.</p>
-          <button
-            onClick={this.closeModal}
-            type="button"
-            className="btn btn-default"
-          >Close</button>
-        </Modal>
-
+      <div>
+        <div onClick={this.toggleDropdown}>
+          {this.props.title} 
+          {this.state.selectedData && `: ${this.state.selectedData}`}
+        </div>
+        { this.state.isShowing && 
+          <ul>
+           {dataArray}
+          </ul>
+        }
       </div>
+    );
+  }
+}
+
+Dropdown.propTypes = {
+  title: React.PropTypes.string.isRequired,
+  data: React.PropTypes.array
+}
+
+class App extends React.Component {
+  render () {
+    const guestNumberArray = ['beef', 'sushi','burrito'];
+    return (
+        <Dropdown 
+          title="What would you like for dinner?"
+          data={guestNumberArray} />
+          
     );
   }
 }
