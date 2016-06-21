@@ -3,9 +3,9 @@ import {
   INCREMENT_COUNTER, 
   DECREMENT_COUNTER, 
   INPUT_TYPING,
-  HANDLE_DELETE,
   HANDLE_SUBMIT,
-  REQUEST_TODOS } from './actions.js';
+  REQUEST_TODOS,
+  DELETE_SUCCESS, DELETE_ERROR, DELETE_BEGIN } from './actions.js';
 import { combineReducers } from 'redux';
 
 const initialState = [
@@ -56,17 +56,31 @@ function todos(state = todoInitialState, action) {
         inputValue: ''
       });
 
-    case HANDLE_DELETE:
+    case DELETE_SUCCESS:
       return Object.assign({}, state, {
         todos: state.todos.filter( 
           (todo, index) => index !== action.payload.index
-        )
+        ),
+        startDeleting: false,
+        deleteSuccess: true
       });
 
     case REQUEST_TODOS:
       return Object.assign({}, state, {
         todos: action.payload.todos,
         isLoaded: true
+      });
+
+    case DELETE_BEGIN:
+      return Object.assign({}, state, {
+        startDeleting: true
+      });
+
+    case DELETE_ERROR: 
+      return Object.assign({}, state, {
+        startDeleting: false,
+        deleteSuccess: false,
+        errorMessage: action.payload.error
       });
 
     default: 
