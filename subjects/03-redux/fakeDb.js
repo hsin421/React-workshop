@@ -11,3 +11,14 @@ export const requestTodos = (cb) => {
 		}, 2000
 	);
 }
+
+export const deleteFromBackend = (cb) => {
+		setTimeout(() => {
+			if(Math.random() < 0.5) {
+				cb({success: true});
+			} else {
+				cb({success: false, error: 'database died!'});
+			}
+		}, 500
+	);
+}

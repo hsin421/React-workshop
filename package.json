@@ -50,6 +50,7 @@
     "react-tween-state": "0.0.5",
     "redux": "^3.0.4",
     "redux-devtools": "^2.1.5",
+    "redux-thunk": "^2.1.0",
     "sort-by": "^1.1.0",
     "style-loader": "^0.12.3",
     "url-loader": "^0.5.6",

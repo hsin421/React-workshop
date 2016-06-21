@@ -91,7 +91,7 @@ class App extends React.Component {
         <h1> What the redux? </h1>
         <input onChange={this.handleInput} value={this.props.todos.inputValue} />
         <button onClick={this.handleSubmit} > Submit </button>
-        { todos }
+        {this.props.todos.isLoaded ? todos : <p>Loading...</p> }
         { counters }
       </div>
       );

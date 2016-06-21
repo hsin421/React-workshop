@@ -39,7 +39,8 @@ function counters(state = initialState, action) {
 
 const todoInitialState = {
   inputValue: '',
-  todos: []
+  todos: [],
+  isLoaded: false
 };
 
 function todos(state = todoInitialState, action) {
@@ -64,7 +65,8 @@ function todos(state = todoInitialState, action) {
 
     case REQUEST_TODOS:
       return Object.assign({}, state, {
-        todos: action.payload.todos
+        todos: action.payload.todos,
+        isLoaded: true
       });
 
     default: 
